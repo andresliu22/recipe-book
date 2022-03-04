@@ -24,8 +24,6 @@ export class RecipeService {
     }
 
     addIngredientsToShoppingList(ingredients: Ingredient[]) {
-        ingredients.forEach(ingredient => {
-            this.shoppingListService.addIngredient(ingredient);
-        })
+        this.shoppingListService.addIngredients(ingredients);
     }
 }
